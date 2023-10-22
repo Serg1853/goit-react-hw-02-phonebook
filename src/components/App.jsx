@@ -3,7 +3,7 @@ import ContactList from './ContactList/ContactList';
 import { Component } from 'react';
 import ContactForm from './ContactForm/ContactForm';
 import Filter from './Filter/Filter';
-import css from './App.module.css'
+import css from './App.module.css';
 // import LoginForm from './Form'
 export class App extends Component {
   state = {
@@ -30,7 +30,7 @@ export class App extends Component {
   };
   changeFilter = value => {
     this.setState({ filter: value });
-     };
+  };
 
   getFilterContacts = () => {
     const { filter, contacts } = this.state;
