@@ -28,9 +28,9 @@ export class App extends Component {
       contacts: [...prevState.contacts, contact],
     }));
   };
-  changeFilter = event => {
-    this.setState({ filter: event.target.value });
-  };
+  changeFilter = value => {
+    this.setState({ filter: value });
+     };
 
   getFilterContacts = () => {
     const { filter, contacts } = this.state;
